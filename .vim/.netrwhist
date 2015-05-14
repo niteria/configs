@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/bnitka/stat-test/.hsenv/cabal/lib/x86_64-osx-ghc-7.6.3/ansi-terminal-0.6/System'
+let g:netrw_dirhist_2='/Users/bnitka/ansi-terminal-0.6/System/Console/ANSI'
+let g:netrw_dirhist_3='/Users/bnitka/stat-test/orig/abstract-deque-0.2.2'
+let g:netrw_dirhist_4='/Users/bnitka/kitten'
+let g:netrw_dirhist_5='/Users/bnitka/kitten/lib'
+let g:netrw_dirhist_6='/Users/bnitka/kitten/lib/Kitten'
+let g:netrw_dirhist_7='/Users/bnitka/.config'
+let g:netrw_dirhist_8='/Users/bnitka/try-reflex/reflex-todomvc'
+let g:netrw_dirhist_9='/Users/bnitka/.vim/bundle'
