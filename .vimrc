@@ -124,3 +124,8 @@ imap <C-@> <C-Space>
 
 set clipboard=unnamed
 autocmd BufRead *.ktn set filetype=kitten
+
+xmap C  <Plug>Commentary
+omap C  <Plug>Commentary
+nmap C  <Plug>CommentaryLine
+
