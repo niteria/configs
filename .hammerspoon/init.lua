@@ -15,6 +15,7 @@ end)
 --
 
 hs.grid.setGrid('2x2')
+hs.grid.setGrid('3x2', '2560x1600')
 hs.grid.setMargins('0x0')
 
 -- disable animation
@@ -53,7 +54,7 @@ function processMove()
   k:bind({}, 'escape', function() 
     k:exit() 
   end)
-  local w,h = hs.grid.getGrid()
+  local w,h = hs.grid.getGrid(hs.window.focusedWindow():screen())
   local id = 1
   for i = 0,h-1,1 do
     for j = 0,w-1,1 do
