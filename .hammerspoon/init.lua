@@ -54,7 +54,8 @@ function processMove()
   k:bind({}, 'escape', function() 
     k:exit() 
   end)
-  local w,h = hs.grid.getGrid(hs.window.focusedWindow():screen())
+  local w = hs.grid.getGrid(hs.window.focusedWindow():screen()).w
+  local h = hs.grid.getGrid(hs.window.focusedWindow():screen()).h
   local id = 1
   for i = 0,h-1,1 do
     for j = 0,w-1,1 do
@@ -69,7 +70,9 @@ end
 
 function processResize(k, x, y, w, h) 
   k:exit() 
-  local gw,gh = hs.grid.getGrid()
+  local gw = hs.grid.getGrid().w
+  local gh = hs.grid.getGrid().h
+  
   -- allow out of bounds for early exit
   if w > gw or h > gh then
     hs.grid.set(hs.window.focusedWindow(), { x = x, y = y, w = w, h = h })
